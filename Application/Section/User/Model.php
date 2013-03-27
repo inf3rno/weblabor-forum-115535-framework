@@ -2,17 +2,10 @@
 
 namespace Application\Section\User;
 
+use Application\Helper\Model\AbstractModel;
 
-use Application\Container;
-
-class Model implements \Core\Model\Model
+class Model extends AbstractModel
 {
-    protected $application;
-
-    public function __construct(Container $application)
-    {
-        $this->application = $application;
-    }
 
     public function update($password)
     {

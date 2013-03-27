@@ -7,11 +7,13 @@ A feladat a példánál az, hogy csináljunk egy beléptető rendszert oo progra
 A beléptető rendszer 3 oldalból fog állni: login, logout, profile.
 A login csak jelszót kér be, amit magának küld el, és összehasonlítja az aktuálissal. Mivel csak egy jelszó lesz, ezért adatbázisra nincs szükség, elég egy json vagy xml fájlban letárolni.
 
-
+Készen van.
 
 **Flow** &#8730; &#10005;
 
-Refaktoráljuk kicsit a kódunkat.
+&#8730; Refaktoráljuk kicsit a kódunkat.
+
+    Átszórtam a model-ben és a controller-ben közös kódot absztrakt osztályokba.
 
 &#8730; Közben a munka hevében megcsináltam a logout oldalt is.
 

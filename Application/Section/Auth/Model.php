@@ -3,16 +3,10 @@
 namespace Application\Section\Auth;
 
 
-use Application\Container;
+use Application\Helper\Model\AbstractModel;
 
-class Model implements \Core\Model\Model
+class Model extends AbstractModel
 {
-    protected $application;
-
-    public function __construct(Container $application)
-    {
-        $this->application = $application;
-    }
 
     public function login($password)
     {

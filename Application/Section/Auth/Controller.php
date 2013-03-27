@@ -4,25 +4,21 @@ namespace Application\Section\Auth;
 
 
 use Application\Container;
-use Application\Helper\View\Redirect;
+use Application\Helper\Controller\AbstractController;
 use Application\PermissionException;
-use Core\Controller\BasicValidator;
 use Core\Controller\InputException;
 use Core\Controller\MethodException;
 use Core\IO\IOException;
 use Core\IO\ParserException;
 
-class Controller implements \Core\Controller\Controller
+class Controller extends AbstractController
 {
-    protected $application;
     protected $model;
-    protected $validator;
 
     public function __construct(Container $application)
     {
-        $this->application = $application;
+        parent::__construct($application);
         $this->model = new Model($application);
-        $this->validator = new BasicValidator();
     }
 
     public function login()
@@ -66,10 +62,5 @@ class Controller implements \Core\Controller\Controller
         $form->render();
     }
 
-    protected function redirect($url)
-    {
-        $redirect = new Redirect(array('url' => $url));
-        $redirect->render();
-    }
 
 }
