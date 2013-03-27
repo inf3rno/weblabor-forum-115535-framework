@@ -13,6 +13,8 @@ A login csak jelszót kér be, amit magának küld el, és összehasonlítja az 
 
 Csináljuk meg a login oldalt.
 
+    Megcsináltam a megjelenítés részét, logikát még egyáltalán nem raktam bele.
+
 &#8730; Csináljunk egy Application könyvtárat, abban egy Container-t, és gondoljuk át, hogy mire lesz szükség az oldalhoz.
 
     Megcsináltam a bootstrap-et, csináltam egy main controller-t a jelenlegi oldalnak.

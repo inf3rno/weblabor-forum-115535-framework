@@ -1,5 +1,7 @@
 {
-    "main": {
-        "/": "index"
+    "auth": {
+        "/": "login",
+        "/login.php": "login",
+        "/logout.php": "logout"
     }
 }

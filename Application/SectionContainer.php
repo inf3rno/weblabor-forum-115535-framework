@@ -3,13 +3,13 @@
 namespace Application;
 
 
-use Application\Section\Main\Controller;
+use Application\Section\Auth\Controller;
 
 class SectionContainer implements \Core\Container
 {
     protected $application;
 
-    protected $main;
+    protected $auth;
 
     public function __construct(Container $application)
     {
@@ -21,10 +21,11 @@ class SectionContainer implements \Core\Container
         return $this->application;
     }
 
-    public function main()
+    public function auth()
     {
-        if (!isset($this->main))
-            $this->main = new Controller();
-        return $this->main;
+        if (!isset($this->auth))
+            $this->auth = new Controller();
+        return $this->auth;
     }
+
 }
