@@ -25,6 +25,12 @@ class Container implements \Core\Container
         $this->router()->dispatch($url);
     }
 
+    public function permission()
+    {
+        if (!$this->session())
+            throw new PermissionException();
+    }
+
     public function session($authorized = null)
     {
         if (!isset($this->session))

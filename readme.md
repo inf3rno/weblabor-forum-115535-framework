@@ -11,9 +11,12 @@ A login csak jelszót kér be, amit magának küld el, és összehasonlítja az 
 
 **Flow** &#8730; &#10005;
 
-Csináljuk meg a profil oldalt.
+Tegyük be a login oldalra, hogyha be vagyunk jelentkezve, akkor irányítson a profil oldalra.
+
+&#8730; Csináljuk meg a profil oldalt.
 
     Megcsináltam a jelszó mentés részét, a munkamenet hiányzik már csak a képből.
+    Kész a teljes profil oldal.
 
 &#8730; Csináljuk meg a login oldalt.
 
