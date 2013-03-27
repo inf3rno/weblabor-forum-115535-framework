@@ -11,7 +11,11 @@ A login csak jelszót kér be, amit magának küld el, és összehasonlítja az 
 
 **Flow** &#8730; &#10005;
 
-Tegyük be a login oldalra, hogyha be vagyunk jelentkezve, akkor irányítson a profil oldalra.
+Refaktoráljuk kicsit a kódunkat.
+
+&#8730; Közben a munka hevében megcsináltam a logout oldalt is.
+
+&#8730; Tegyük be a login oldalra, hogyha be vagyunk jelentkezve, akkor irányítson a profil oldalra.
 
 &#8730; Csináljuk meg a profil oldalt.
 

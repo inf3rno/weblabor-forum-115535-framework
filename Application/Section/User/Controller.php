@@ -4,6 +4,7 @@ namespace Application\Section\User;
 
 
 use Application\Container;
+use Application\Helper\View\Redirect;
 use Application\PermissionException;
 use Core\Controller\BasicValidator;
 use Core\Controller\InputException;
@@ -48,6 +49,12 @@ class Controller implements \Core\Controller\Controller
     {
         $view = new UpdateForm(array('message' => $message));
         $view->render();
+    }
+
+    protected function redirect($url)
+    {
+        $redirect = new Redirect(array('url' => $url));
+        $redirect->render();
     }
 
 }

@@ -21,4 +21,9 @@ class Model implements \Core\Model\Model
         else
             throw new LoginException();
     }
+
+    public function logout()
+    {
+        $this->application->session(false);
+    }
 }

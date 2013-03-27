@@ -25,9 +25,11 @@ class Container implements \Core\Container
         $this->router()->dispatch($url);
     }
 
-    public function permission()
+    public function permission($expected = true)
     {
-        if (!$this->session())
+        if ($expected && !$this->session())
+            throw new PermissionException();
+        if (!$expected && $this->session())
             throw new PermissionException();
     }
 
