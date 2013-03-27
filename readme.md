@@ -13,4 +13,12 @@ A login csak jelszót kér be, amit magának küld el, és összehasonlítja az 
 
 Csináljunk egy Application könyvtárat, abban egy Container-t, és gondoljuk át, hogy mire lesz szükség az oldalhoz.
 
+    Megcsináltam a bootstrap-et, csináltam egy main controller-t a jelenlegi oldalnak.
+    A container-be az olyan dolgok fognak menni, amik közösek, és úgy jó, ha csak egy példány van belőlük:
+        - munkamenet kezelés (csak egyszer szabad elindítani)
+        - jelszó titkosítás (a salt fontos, hogy csak egy helyen legyen meg)
+        - kapcsolat az adattárolóval
+        - router
+        - controllereket tároló container
+
 &#8730; Kiindulásnak beállítottam a phpunit-ot, felszórtam a keretrendszert, és megcsináltam a front controller-t a htaccess-ben.
