@@ -3,16 +3,16 @@
 namespace Application;
 
 
-use Application\Main\Controller;
+use Application\Section\Main\Controller;
 
 class Container implements \Core\Container
 {
-    protected $main;
+    protected $section;
 
-    public function main()
+    public function section()
     {
-        if (!isset($this->main))
-            $this->main = new Controller();
-        return $this->main;
+        if (!isset($this->section))
+            $this->section = new SectionContainer($this);
+        return $this->section;
     }
 }
