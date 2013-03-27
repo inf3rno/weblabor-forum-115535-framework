@@ -1,0 +1,8 @@
+{
+    "controller": {
+        "path1": "route1"
+    },
+    "controller2": {
+        "path2": "route2"
+    }
+}
