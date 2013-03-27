@@ -16,15 +16,10 @@ class SectionContainer implements \Core\Container
         $this->application = $application;
     }
 
-    public function application()
-    {
-        return $this->application;
-    }
-
     public function auth()
     {
         if (!isset($this->auth))
-            $this->auth = new Controller();
+            $this->auth = new Controller($this->application);
         return $this->auth;
     }
 

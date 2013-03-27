@@ -45,6 +45,13 @@ class Container implements \Core\Container
         $this->store->write($path, $hash);
     }
 
+    public function hash($string)
+    {
+        if (!isset($this->encryptor))
+            $this->encryptor = new Sha1Encryptor($this->salt);
+        return $this->encryptor->hash($string);
+    }
+
     protected function directory()
     {
         return __DIR__ . DIRECTORY_SEPARATOR;
@@ -68,11 +75,4 @@ class Container implements \Core\Container
         return $this->section;
     }
 
-
-    protected function hash($string)
-    {
-        if (!isset($this->encryptor))
-            $this->encryptor = new Sha1Encryptor($this->salt);
-        return $this->encryptor->hash($string);
-    }
 }

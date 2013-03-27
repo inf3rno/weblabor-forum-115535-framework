@@ -11,7 +11,9 @@ A login csak jelszót kér be, amit magának küld el, és összehasonlítja az 
 
 **Flow** &#8730; &#10005;
 
-Csináljuk meg a login oldalt.
+Csináljuk meg a profil oldalt.
+
+&#8730; Csináljuk meg a login oldalt.
 
     Megcsináltam a megjelenítés részét, logikát még egyáltalán nem raktam bele.
 
