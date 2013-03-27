@@ -13,6 +13,8 @@ A login csak jelszót kér be, amit magának küld el, és összehasonlítja az 
 
 Csináljuk meg a profil oldalt.
 
+    Megcsináltam a jelszó mentés részét, a munkamenet hiányzik már csak a képből.
+
 &#8730; Csináljuk meg a login oldalt.
 
     Megcsináltam a megjelenítés részét, logikát még egyáltalán nem raktam bele.

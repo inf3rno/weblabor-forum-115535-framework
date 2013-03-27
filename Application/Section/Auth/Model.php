@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by JetBrains PhpStorm.
- * User: inf3rno
- * Date: 2013.03.27.
- * Time: 8:30
- * To change this template use File | Settings | File Templates.
- */
 
 namespace Application\Section\Auth;
 

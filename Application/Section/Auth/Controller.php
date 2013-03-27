@@ -8,7 +8,6 @@ use Application\Helper\View\Redirect;
 use Core\Controller\BasicValidator;
 use Core\Controller\InputException;
 use Core\Controller\MethodException;
-use Core\Controller\Validator;
 use Core\IO\IOException;
 use Core\IO\ParserException;
 
@@ -53,12 +52,6 @@ class Controller implements \Core\Controller\Controller
             'message' => $message
         ));
         $form->render();
-    }
-
-    protected function authModel()
-    {
-        $model = new Model($this->application);
-        return $model;
     }
 
     protected function redirect($url)

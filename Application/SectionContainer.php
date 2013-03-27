@@ -10,6 +10,7 @@ class SectionContainer implements \Core\Container
     protected $application;
 
     protected $auth;
+    protected $user;
 
     public function __construct(Container $application)
     {
@@ -21,6 +22,13 @@ class SectionContainer implements \Core\Container
         if (!isset($this->auth))
             $this->auth = new Controller($this->application);
         return $this->auth;
+    }
+
+    public function user()
+    {
+        if (!isset($this->user))
+            $this->user = new \Application\Section\User\Controller($this->application);
+        return $this->user;
     }
 
 }

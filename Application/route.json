@@ -3,5 +3,8 @@
         "/": "login",
         "/login.php": "login",
         "/logout.php": "logout"
+    },
+    "user": {
+        "/profile.php": "profile"
     }
 }
