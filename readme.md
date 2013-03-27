@@ -11,7 +11,9 @@ A login csak jelszót kér be, amit magának küld el, és összehasonlítja az 
 
 **Flow** &#8730; &#10005;
 
-Csináljunk egy Application könyvtárat, abban egy Container-t, és gondoljuk át, hogy mire lesz szükség az oldalhoz.
+Csináljuk meg a login oldalt.
+
+&#8730; Csináljunk egy Application könyvtárat, abban egy Container-t, és gondoljuk át, hogy mire lesz szükség az oldalhoz.
 
     Megcsináltam a bootstrap-et, csináltam egy main controller-t a jelenlegi oldalnak.
     A container-be az olyan dolgok fognak menni, amik közösek, és úgy jó, ha csak egy példány van belőlük:
